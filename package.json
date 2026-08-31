@@ -1,0 +1,11 @@
+{
+  "name": "payment-accounting-demo",
+  "private": true,
+  "workspaces": ["backend", "frontend"],
+  "scripts": {
+    "build": "npm run build -w backend && npm run build -w frontend",
+    "test": "npm run test -w backend",
+    "test:integration": "npm run test:integration -w backend",
+    "lint": "npm run lint -w backend && npm run lint -w frontend"
+  }
+}
